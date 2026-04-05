@@ -16,7 +16,7 @@ export default function HeroHeader() {
       <div className="relative z-10 mx-auto w-full max-w-4xl px-6 pb-16 pt-32 sm:px-8 lg:px-12">
         {/* Course tag */}
         {essayMeta.course && (
-          <span className="mb-4 inline-block rounded-sm border border-white/20 px-3 py-1 font-sans text-xs tracking-widest text-white/60 uppercase">
+          <span className="mb-4 inline-block rounded-sm border border-stone bg-stone/20 px-4 py-1.5 font-sans text-sm font-semibold tracking-widest text-white uppercase">
             {essayMeta.course}
           </span>
         )}
@@ -35,7 +35,7 @@ export default function HeroHeader() {
 
         {/* Author & date */}
         <div className="flex items-center gap-4 text-sm text-white/50">
-          <span>{essayMeta.author}</span>
+          <span className="text-base font-bold text-white/90">{essayMeta.author}</span>
           <span className="h-3 w-px bg-white/20" aria-hidden="true" />
           <time>{essayMeta.date}</time>
         </div>
